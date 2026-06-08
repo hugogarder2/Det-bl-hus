@@ -1,0 +1,48 @@
+# Det blå hus
+
+> Det blå hus er en traditionel dansk smørrebrødsrestaurant beliggende på Tårnvej 321 i Rødovre, Danmark. Åbnet i 2020. Specialiserer sig i hjemmelavet smørrebrød med friske råvarer, klassiske opskrifter og friskbrygget kaffe.
+
+## Kontakt & Info
+- **Adresse**: Tårnvej 321, 2610 Rødovre
+- **Telefon**: 38 19 38 04
+- **Hjemmeside**: [https://det-blaa-hus.vercel.app/](https://det-blaa-hus.vercel.app/)
+- **Åbningstider**:
+  - Mandag: 08:30 - 15:00
+  - Tirsdag: 08:30 - 15:00
+  - Onsdag: 08:30 - 18:00
+  - Torsdag: 08:30 - 15:00
+  - Fredag: 08:00 - 15:00
+  - Lørdag: 10:00 - 15:00
+  - Søndag: Lukket
+
+## Menu & Priser
+
+### Smørrebrød (Vores Specialitet)
+- **Roastbeef** (55 kr.): Med remoulade, tomat og ristet peberrod på rugbrød.
+- **Røget Laks** (60 kr.): Med creme cheese, dild og citron på frisk rugbrød.
+- **Rejer** (65 kr.): Med mayonnaise, dild og citron – en klassiker.
+- **Æg og rejer** (55 kr.): Med mayonnaise og purløg.
+- **Leverpostej** (45 kr.): Med bacon og syltede agurker – dansk comfort food.
+- **Bland Din Egen Æske** (Fra 180 kr.): Sammensæt din egen æske med 4-6 stk. smørrebrød efter eget valg.
+
+### Drikkevarer
+- **Kaffe**: Friskbrygget kaffe (25 kr.)
+- **Latte**: Klassisk espresso med cremet mælk (35 kr.)
+- **Cappuccino**: Kraftig espresso med mælkeskum (30 kr.)
+- **Americano**: Espresso med varmt vand (25 kr.)
+- **Kakao**: Varm kakao med flødeskum (30 kr.)
+- **Chai Latte**: Krydret te med varm mælk (35 kr.)
+- **Te**: Sort, grøn eller urtete (25 kr.)
+- **Sodavand**: Cola, Faxe Kondi, Fanta, Sprite (20 kr.)
+
+### Søde Sager
+- **Kage**: Frisk kage hver dag (40 kr.)
+- **Croissant**: Butterdej med smør (25 kr.)
+- **Kanel Snegle**: Varme kanel-snegle med glasur (20 kr.)
+
+## Anmeldelser & Rating
+Det blå hus har en rating på **5.0 stjerner** på Google Reviews.
+Uddrag af gæsteanmeldelser:
+- *"Super lækkert smørrebrød! Altid friske råvarer, rigelige mængder pålæg og fantastisk betjening. Mit absolutte yndlings frokoststed i Rødovre!"* — Mads Clausen (5/5)
+- *"Klassisk dansk smørrebrød i særklasse. Deres roastbeef og flæskestegssandwich er helt fantastiske! Kan varmt anbefales."* — Alex Lysemose (5/5)
+- *"Hyggeligt spisested, utrolig venligt personale og rigtig gode priser. Helt klart det bedste smørrebrød i Rødovre!"* — Jeppe Nymark (5/5)
