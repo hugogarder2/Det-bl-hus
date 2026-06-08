@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Open Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Merriweather Sans", ui-serif, Georgia, serif;
+}
+
+:root {
+  --accent-color: #4A90C2;
+  --accent2-color: #2E5C8A;
+  --accent3-color: #3A7AAB;
+  --accent4-color: #5BA3D6;
+  --primary-color: #2E5C8A;
+  --dark-text-color: #1A3A5C;
+  --gray-text-color: #4A6B8A;
+  --button-padding-x: 24px;
+  --button-padding-y: 14px;
+  --font-family-body: 'Open Sans', sans-serif;
+  --light-text-color: #FFFFFF;
+  --dark-border-color: #8BB8D8;
+  --light-border-color: #C5DFF0;
+  --font-family-heading: 'Merriweather Sans', sans-serif;
+  --button-rounded-radius: 8px;
+  --dark-background-color: #EBF5FB;
+  --light-background-color: #FFFFFF;
+  --header-background-color: #EBF5FB;
+  --medium-background-color: #D6EAF6;
+  --primary-button-text-color: #FFFFFF;
+  --secondary-button-bg-color: #4A90C2;
+  --secondary-button-text-color: #FFFFFF;
+  --primary-button-hover-bg-color: #1E4A72;
+  --primary-button-hover-text-color: #FFFFFF;
+  --secondary-button-hover-bg-color: #3A7AAB;
+  --secondary-button-hover-text-color: #FFFFFF;
+}
+
+body {
+  font-family: var(--font-family-body);
+  color: var(--dark-text-color);
+  background-color: var(--light-background-color);
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family-heading);
+}
+
+/* Landingsite animations & custom classes */
+.scroll-animate {
+  opacity: 1;
+  transform: none;
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.scroll-animate-stagger {
+  opacity: 1;
+  transform: none;
+}
+
+/* Custom background image for Hero section so it stands out */
+.bg-hero-overlay {
+  background: linear-gradient(180deg, rgba(26, 58, 92, 0.45) 0%, rgba(26, 58, 92, 0.7) 100%);
+}

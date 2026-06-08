@@ -1,0 +1,6 @@
+{
+  "name": "Det blå hus",
+  "description": "Traditionel dansk smørrebrødsrestaurant i Rødovre",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
