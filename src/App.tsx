@@ -148,7 +148,17 @@ export default function App() {
   const website = websiteData.data.websitePreview as WebsitePreview;
   const headerHtml = website.headerCodeSection.html;
   const footerHtml = website.footerCodeSection.html;
-  const sections = website.homepage.codeSections;
+
+  // Reorder sections so that 'sm8ig3d' (Menu & Catering) is placed right under 'sdp4xis' (Signature Menu)
+  const rawSections = website.homepage.codeSections;
+  const sections = [...rawSections];
+  const sdp4xisIndex = sections.findIndex(s => s.id === "sdp4xis");
+  const sm8ig3dIndex = sections.findIndex(s => s.id === "sm8ig3d");
+  if (sdp4xisIndex !== -1 && sm8ig3dIndex !== -1 && sm8ig3dIndex > sdp4xisIndex) {
+    const [sm8ig3dSection] = sections.splice(sm8ig3dIndex, 1);
+    const newInsertIndex = sections.findIndex(s => s.id === "sdp4xis") + 1;
+    sections.splice(newInsertIndex, 0, sm8ig3dSection);
+  }
 
   // Track if we need to show the page-up chevron button
   const [showScrollTop, setShowScrollTop] = useState(false);
@@ -212,13 +222,13 @@ export default function App() {
         const hash = anchorElement.hash;
         if (hash === "#contact" || hash === "#menu" || hash === "#ordreforspoergsel") {
           e.preventDefault();
-          let targetId = hash === "#contact" ? "ordreforspoergsel" : hash.substring(1);
+          let targetId = hash.substring(1);
           
           const el = document.getElementById(targetId);
           if (el) {
             el.scrollIntoView({ behavior: "smooth" });
-            if (hash === "#contact") {
-              setShowToast("Opret en ordreforspørgsel med kaffe, smørrebrød eller savmus nedenfor!");
+            if (hash === "#ordreforspoergsel") {
+              setShowToast("Brug formularen nedenfor til nemt at oprette din ordreforspørgsel!");
             }
           }
           setMobileMenuOpen(false);
@@ -487,10 +497,16 @@ export default function App() {
       {/* Main Sections */}
       <main className="pt-32"> {/* Offset height of the fixed navigation header */}
         {sections.map((section) => {
-          // Put the custom Ordreforspørgsel section right before the contact section in index
-          if (section.id === "contact") {
+          // Put the custom Ordreforspørgsel section right under the Menu & Catering section (sm8ig3d)
+          if (section.id === "sm8ig3d") {
             return (
-              <div key="custom-order-section-block">
+              <div key="custom-menu-and-order-section-block">
+                {/* Original Menu & Catering Section */}
+                <div
+                  id={`section-container-${section.id}`}
+                  dangerouslySetInnerHTML={{ __html: section.html }}
+                />
+
                 {/* Custom Interactive Ordreforspørgsel Section */}
                 <section 
                   id="ordreforspoergsel"
@@ -937,12 +953,6 @@ export default function App() {
                     </form>
                   </div>
                 </section>
-
-                {/* Original Contact Section */}
-                <div
-                  id={`section-container-${section.id}`}
-                  dangerouslySetInnerHTML={{ __html: section.html }}
-                />
               </div>
             );
           }
