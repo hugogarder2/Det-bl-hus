@@ -495,7 +495,7 @@ export default function App() {
       />
 
       {/* Main Sections */}
-      <main className="pt-32"> {/* Offset height of the fixed navigation header */}
+      <main className="pt-20"> {/* Offset height of the fixed navigation header */}
         {sections.map((section) => {
           // Put the custom Ordreforspørgsel section right under the Menu & Catering section (sm8ig3d)
           if (section.id === "sm8ig3d") {
